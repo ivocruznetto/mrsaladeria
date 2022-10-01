@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        MR Saladeria
+        Mr Saladeria Gourmet
     </title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -50,18 +50,18 @@
         <div class="menu-wrap">
             <a href="#home">
                 <div class="logo">
-                    MR Saladeria
+                    <img src="assets/logo.png" alt="logo-mr-saladeria-gourmet">
                 </div>
             </a>
             <div class="menu h-xs">
                 <a href="#home">
                     <div class="menu-item active">
-                        Home
+                        Início
                     </div>
                 </a>
                 <a href="#about">
                     <div class="menu-item">
-                        About
+                        Sobre
                     </div>
                 </a>
                 <a href="#food-menu-section">
@@ -71,34 +71,39 @@
                 </a>
                 <a href="#testimonial">
                     <div class="menu-item">
-                        Testimonials
+                        Nossos clientes
                     </div>
                 </a>
             </div>
             <div class="right-menu">
                 <div class="cart-btn">
-                    <i class='bx bx-cart-alt'></i>
+                    <a href="https://mrsaladeria.menudino.com/" target="_blank">
+                        <i class='bx bx-cart-alt'></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <!-- END TOP NAVIGATION -->
     <!-- SECTION HOME -->
-    <section id="home" class="fullheight align-items-center bg-img bg-img-fixed" style="background-image: url(assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+    <section id="home" class="fullheight align-items-center bg-img bg-img-fixed" style="background-image: url(assets/Image001-1-740x502.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-6 col-xs-12">
                     <div class="slogan">
                         <h1 class="left-to-right play-on-scroll">
-                            MR Saladeria
+                            Mr Saladeria Gourmet
                         </h1>
-                        <p class="left-to-right play-on-scroll delay-2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae eveniet ullam perferendis eos, nobis corrupti similique fuga ipsa minus at eius ipsam expedita quam aliquam perspiciatis voluptate qui dolore soluta.
+                        <p class="left-to-right play-on-scroll delay-2 desc">
+                            Comer saudável nunca foi tão gostoso.
+                            <br> A Mr Saladeria é um delivery de saladas deliciosas, práticas e saudáveis preparadas com ingredientes frescos e ricos em nutrientes.
                         </p>
                         <div class="left-to-right play-on-scroll delay-4">
-                            <button>
-                                Order now
-                            </button>
+                            <a href="https://mrsaladeria.menudino.com/" target="_blank">
+                                <button>
+                                    Peça agora
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -116,10 +121,12 @@
                 <div class="col-5 col-xs-12 align-items-center">
                     <div class="about-slogan right-to-left play-on-scroll">
                         <h3>
-                            <span class="primary-color">We</span> create <span class="primary-color">delicious</span> memories for <span class="primary-color">you</span>
+                            <!-- <span class="primary-color">We</span> create <span class="primary-color">delicious</span> memories for <span class="primary-color">you</span> -->
+                            <span class="primary-color">Quem somos</span>
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus placeat et eos, dignissimos voluptatem tempora necessitatibus doloribus! Eum qui doloribus odio dolor tenetur nihil impedit vero magni, distinctio soluta!
+                            Olá, somos a Mr Saladeria Gourmet, uma empresa pioneira na cidade de Alfenas com um conceito um tanto quanto diferente. Criada por jovens cansados da mesmice, com sede de inovação, para levar até você muito mais do que uma alimentação saudável. Queremos
+                            levar até você qualidade de vida, saúde, leveza e praticidade. Oferecemos um cardápio variado para que você use a sua criatividade e faça deliciosas combinações.
                         </p>
                     </div>
                 </div>
@@ -140,199 +147,122 @@
                 <div class="food-category">
                     <div class="zoom play-on-scroll">
                         <button class="active" data-food-type="all">
-                            All food
+                            Todas proteínas
                         </button>
                     </div>
                     <div class="zoom play-on-scroll delay-2">
-                        <button data-food-type="salad">
-                            Salad
+                        <button data-food-type="chicken">
+                            Frango em tiras
                         </button>
                     </div>
                     <div class="zoom play-on-scroll delay-4">
-                        <button data-food-type="lorem">
-                            Lorem
+                        <button data-food-type="beef">
+                            Carne bovina
                         </button>
                     </div>
                     <div class="zoom play-on-scroll delay-6">
-                        <button data-food-type="ipsum">
-                            Ipsum
-                        </button>
-                    </div>
-                    <div class="zoom play-on-scroll delay-8">
-                        <button data-food-type="dolor">
-                            Dolor
+                        <button data-food-type="fish">
+                            Peixe
                         </button>
                     </div>
                 </div>
 
                 <div class="food-item-wrap all">
-                    <div class="food-item salad-type">
-                        <div class="item-wrap bottom-up play-on-scroll">
-                            <div class="item-img">
-                                <div class="img-holder bg-img" style="background-image: url(assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
-                            </div>
-                            <div class="item-info">
-                                <div>
-                                    <h3>
-                                        Lorem ipsum
-                                    </h3>
-                                    <span>
-                                        120$
-                                    </span>
+
+                    <div class="food-item chicken-type">
+                        <a href="https://mrsaladeria.menudino.com/?produto=brasileira&item=f09154cb-61d0-4e97-96d0-b0f74309b204" target="_blank">
+                            <div class="item-wrap bottom-up play-on-scroll">
+                                <div class="item-img">
+                                    <div class="img-holder bg-img" style="background-image: url('assets/realphotos/brasileira.jpg');"></div>
                                 </div>
-                                <div class="cart-btn">
-                                    <i class="bx bx-cart-alt"></i>
+                                <div class="item-info">
+                                    <div>
+                                        <h3>
+                                            Brasileira
+                                        </h3>
+                                        <span>
+                                            R$ 16,50
+                                        </span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class='bx bx-cart-alt'></i>
+                                    </div>
                                 </div>
+
                             </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="food-item lorem-type">
-                        <div class="item-wrap bottom-up play-on-scroll">
-                            <div class="item-img">
-                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
-                            </div>
-                            <div class="item-info">
-                                <div>
-                                    <h3>
-                                        Lorem ipsum
-                                    </h3>
-                                    <span>
-                                        120$
-                                    </span>
+                    <div class="food-item beef-type">
+                        <a href="https://mrsaladeria.menudino.com/?produto=mr.+salada&item=c8538443-163c-4ccc-8d6c-ef1d45c3df1b" target="_blank">
+
+                            <div class="item-wrap bottom-up play-on-scroll">
+                                <div class="item-img">
+                                    <div class="img-holder bg-img" style="background-image: url('assets/realphotos/mrsalada.jpg');"></div>
                                 </div>
-                                <div class="cart-btn">
-                                    <i class='bx bx-cart-alt'></i>
+                                <div class="item-info">
+                                    <div>
+                                        <h3>
+                                            Mr. Salada
+                                        </h3>
+                                        <span>
+                                            R$ 18,99
+                                        </span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class='bx bx-cart-alt'></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="food-item ipsum-type">
-                        <div class="item-wrap bottom-up play-on-scroll">
-                            <div class="item-img">
-                                <div class="img-holder bg-img" style="background-image: url('assets/jonathan-farber-OCNqOLeCwOc-unsplash.jpg');">
+                    <div class="food-item fish-type">
+                        <a href="https://mrsaladeria.menudino.com/?produto=pescado&item=d7dba344-c1e9-4eda-b150-d76cdf95307f" target="_blank">
+
+                            <div class="item-wrap bottom-up play-on-scroll">
+                                <div class="item-img">
+                                    <div class="img-holder bg-img" style="background-image: url('assets/realphotos/pescado.jpg');"></div>
+                                </div>
+                                <div class="item-info">
+                                    <div>
+                                        <h3>
+                                            Pescado
+                                        </h3>
+                                        <span>
+                                            R$ 17,99
+                                        </span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class='bx bx-cart-alt'></i>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item-info">
-                                <div>
-                                    <h3>
-                                        Lorem ipsum
-                                    </h3>
-                                    <span>
-                                        120$
-                                    </span>
-                                </div>
-                                <div class="cart-btn">
-                                    <i class='bx bx-cart-alt'></i>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="food-item lorem-type">
-                        <div class="item-wrap bottom-up play-on-scroll">
-                            <div class="item-img">
-                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
-                            </div>
-                            <div class="item-info">
-                                <div>
-                                    <h3>
-                                        Lorem ipsum
-                                    </h3>
-                                    <span>
-                                        120$
-                                    </span>
-                                </div>
-                                <div class="cart-btn">
-                                    <i class='bx bx-cart-alt'></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="food-item chicken-type">
+                        <a href="https://mrsaladeria.menudino.com/?produto=saquarema&item=57625321-c5c7-4c70-9e87-84dbb24fdd60" target="_blank">
 
-                    <div class="food-item dolor-type">
-                        <div class="item-wrap bottom-up play-on-scroll">
-                            <div class="item-img">
-                                <div class="img-holder bg-img" style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
-                            </div>
-                            <div class="item-info">
-                                <div>
-                                    <h3>
-                                        Lorem ipsum
-                                    </h3>
-                                    <span>
-                                        120$
-                                    </span>
+                            <div class="item-wrap bottom-up play-on-scroll">
+                                <div class="item-img">
+                                    <div class="img-holder bg-img" style="background-image: url('assets/realphotos/saquarema.jpg');"></div>
                                 </div>
-                                <div class="cart-btn">
-                                    <i class='bx bx-cart-alt'></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="food-item salad-type">
-                        <div class="item-wrap bottom-up play-on-scroll">
-                            <div class="item-img">
-                                <div class="img-holder bg-img" style="background-image: url('assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg');"></div>
-                            </div>
-                            <div class="item-info">
-                                <div>
-                                    <h3>
-                                        Lorem ipsum
-                                    </h3>
-                                    <span>
-                                        120$
-                                    </span>
-                                </div>
-                                <div class="cart-btn">
-                                    <i class='bx bx-cart-alt'></i>
+                                <div class="item-info">
+                                    <div>
+                                        <h3>
+                                            Saquarema
+                                        </h3>
+                                        <span>
+                                            R$ 16,50
+                                        </span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class='bx bx-cart-alt'></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="food-item lorem-type">
-                        <div class="item-wrap bottom-up play-on-scroll">
-                            <div class="item-img">
-                                <div class="img-holder bg-img" style="background-image: url('assets/sina-piryae-bBzjWthTqb8-unsplash.jpg');"></div>
-                            </div>
-                            <div class="item-info">
-                                <div>
-                                    <h3>
-                                        Lorem ipsum
-                                    </h3>
-                                    <span>
-                                        120$
-                                    </span>
-                                </div>
-                                <div class="cart-btn">
-                                    <i class='bx bx-cart-alt'></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="food-item dolor-type">
-                        <div class="item-wrap bottom-up play-on-scroll">
-                            <div class="item-img">
-                                <div class="img-holder bg-img" style="background-image: url('assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg');"></div>
-                            </div>
-                            <div class="item-info">
-                                <div>
-                                    <h3>
-                                        Lorem ipsum
-                                    </h3>
-                                    <span>
-                                        120$
-                                    </span>
-                                </div>
-                                <div class="cart-btn">
-                                    <i class='bx bx-cart-alt'></i>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -427,49 +357,36 @@
                         MR Saladeria
                     </h1>
                     <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quas harum? Atque eius quaerat fuga sint molestiae illo corrupti vitae voluptatibus. Dicta rerum est delectus perspiciatis nemo nihil autem! Doloremque?</p>
+                    <p>Proporcionamos qualidade de vida, saúde, leveza e praticidade. Oferecemos um cardápio variado para que você use a sua criatividade e faça deliciosas combinações.</p>
                     <br>
-                    <p>Email: example@mail.com</p>
-                    <p>Phone: +00 123 456 789</p>
-                    <p>Website: freshfood.com</p>
-                </div>
-                <div class="col-2 col-xs-12">
-                    <h1>
-                        About us
-                    </h1>
-                    <br>
-                    <p>
-                        <a href="#">
-                            Chefs
-                        </a>
-                    </p>
-                    <p>
-                        <a href="#">
-                            Menu
-                        </a>
-                    </p>
-                    <p>
-                        <a href="#">
-                            Testimonials
-                        </a>
-                    </p>
-                    <p>
-                        <a href="#">
-                            Lorem ipsum
-                        </a>
-                    </p>
+                    <p>Whats App: <a href="https://wa.me/5535998484421" target="_blank">(35) 99848-4421</a></p>
+                    <p>Pedidos: <a href="https://mrsaladeria.menudino.com/">mrsaladeria.menudino.com</a></p>
                 </div>
                 <div class="col-4 col-xs-12">
-                    <h1>
-                        Subscribe & media
+                    <h1 style="text-align:center">
+                        Redes sociais
                     </h1>
+                    <div class="socials-medias">
+                        <a href="https://www.instagram.com/mr.saladeria/" target="_blank">
+                            <img src="assets/instagram.svg" alt="instagram-mrsaladeria-icon" loading="lazy">
+                        </a>
+                        <a href="https://www.facebook.com/mr.saladeria" target="_blank">
+                            <img src="assets/facebook.svg" alt="facebook-mrsaladeria-icon" loading="lazy">
+                        </a>
+                        <a href="https://wa.me/5535998484421" target="_blank">
+                            <img src="assets/whatsapp.svg" alt="whatsapp-mrsaladeria-icon" loading="lazy">
+                        </a>
+                    </div>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aspernatur doloremque rerum nam ullam obcaecati error asperiores temporibus quo eum eaque sed odio vitae accusantium, dolorem nihil molestiae deserunt maxime!</p>
-                    <div class="input-group">
-                        <input type="text" placeholder="Enter your email">
-                        <button>
-                            Subscribe
-                        </button>
+
+                    <div class="slogan">
+                        <div class="left-to-right play-on-scroll delay-4">
+                            <a href="https://mrsaladeria.menudino.com/" target="_blank">
+                                <button>
+                                    Peça agora
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

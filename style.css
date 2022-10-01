@@ -26,6 +26,25 @@ html {
     overflow-x: hidden;
 }
 
+.desc {
+    margin-top: 10px;
+}
+
+.socials-medias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-medias a {
+    margin-right: 10px;
+}
+
+.socials-medias a img {
+    width: 30px;
+    filter: invert(1);
+}
+
 .nav {
     position: fixed;
     top: 0;
@@ -43,12 +62,23 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    position: relative;
+    height: 100px;
+    background: #fff;
 }
 
 .logo {
     font-size: 2rem;
     font-weight: 800;
     color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    height: -webkit-fill-available;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 100px;
 }
 
 .menu {
@@ -92,7 +122,7 @@ html {
 }
 
 .fullheight {
-    height: 100vh;
+    height: 110vh;
 }
 
 .align-items-center {
@@ -103,7 +133,7 @@ html {
 }
 
 .bg-img {
-    background-position: center;
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -123,12 +153,12 @@ section {
 }
 
 .slogan {
-    text-align: left;
+    text-align: center;
 }
 
 .slogan h1 {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     color: var(--primary-color);
 }
 
@@ -383,15 +413,15 @@ section {
     display: block;
 }
 
-.food-item-wrap.salad>div.salad-type {
+.food-item-wrap.chicken>div.chicken-type {
     display: block;
 }
 
-.food-item-wrap.lorem>div.lorem-type {
+.food-item-wrap.fish>div.fish-type {
     display: block;
 }
 
-.food-item-wrap.ipsum>div.ipsum-type {
+.food-item-wrap.beef>div.beef-type {
     display: block;
 }
 
@@ -468,6 +498,7 @@ section {
 .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 [class*="col-"] {
@@ -532,6 +563,9 @@ section {
 @media only screen and (max-width: 600px) {
     * {
         font-size: 13px;
+    }
+    .desc {
+        max-width: 280px;
     }
     h1 {
         font-size: 3rem !important;
