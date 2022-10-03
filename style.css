@@ -138,6 +138,13 @@ html {
     background-repeat: no-repeat;
 }
 
+.bg-img-banner {
+    background-position: right;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
 .bg-img-fixed {
     background-attachment: fixed;
 }
@@ -153,10 +160,20 @@ section {
 }
 
 .slogan {
-    text-align: center;
+    text-align: left !important;
+}
+
+.center {
+    text-align: center !important;
 }
 
 .slogan h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--primary-color);
+}
+
+.center h1 {
     font-size: 2rem;
     line-height: 2.5rem;
     color: var(--primary-color);
@@ -176,7 +193,26 @@ section {
     transition: .5s ease-in-out;
 }
 
+.center button {
+    padding: 1rem 5rem;
+    outline: none;
+    border: none;
+    background-color: var(--background-color);
+    border: .125rem solid var(--primary-color);
+    border-radius: 2rem;
+    color: var(--primary-color);
+    margin: 3rem 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .5s ease-in-out;
+}
+
 .slogan button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.center button:hover {
     background-color: var(--primary-color);
     color: var(--white);
 }
@@ -564,6 +600,11 @@ section {
     * {
         font-size: 13px;
     }
+    .bg-img-banner {
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: initial !important;
+    }
     .desc {
         max-width: 280px;
     }
@@ -680,6 +721,7 @@ section {
     }
     .col-xs-12 {
         width: 100%;
+        text-align: center !important;
     }
     .h-xs {
         display: none;
