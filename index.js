@@ -35,13 +35,13 @@ Array.from(categories).forEach((item, index) => {
         let currCat = foodCategory.querySelector('button.active')
         currCat.classList.remove('active')
         e.target.classList.add('active')
-        foodMenuList.classList ='food-item-wrap '+ e.target.getAttribute('data-food-type')
+        foodMenuList.classList = 'food-item-wrap ' + e.target.getAttribute('data-food-type')
     }
 })
 
 // on scroll animation
 
-let scroll = window.requestAnimationFrame || function(callback) {window.setTimeout(callback, 1000/60)}
+let scroll = window.requestAnimationFrame || function(callback) { window.setTimeout(callback, 1000 / 60) }
 
 let elToShow = document.querySelectorAll('.play-on-scroll')
 
@@ -49,10 +49,8 @@ isElInViewPort = (el) => {
     let rect = el.getBoundingClientRect()
 
     return (
-        (rect.top <= 0 && rect.bottom >= 0)
-        ||
-        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) && rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-        ||
+        (rect.top <= 0 && rect.bottom >= 0) ||
+        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) && rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
         (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     )
 }
@@ -83,6 +81,6 @@ bottomNavItems.forEach((item, index) => {
         let crrItem = document.querySelector('.mb-nav-item.active')
         crrItem.classList.remove('active')
         item.classList.add('active')
-        bottomMove.style.left = index * 25 + '%'
+        bottomMove.style.left = index * 33 + '%'
     }
 })
