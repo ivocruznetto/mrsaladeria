@@ -51,7 +51,7 @@ html {
     left: 0;
     width: 100%;
     z-index: 99;
-    background-color: var(--background-color);
+    background-color: var(--white);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -277,6 +277,7 @@ section {
     border-radius: 1rem;
     cursor: pointer;
     transition: .3s ease-in-out;
+    min-height: 58px;
 }
 
 .food-category button:hover,
@@ -449,15 +450,19 @@ section {
     display: block;
 }
 
-.food-item-wrap.chicken>div.chicken-type {
+.food-item-wrap.prepared-salads>div.prepared-salads-type {
     display: block;
 }
 
-.food-item-wrap.fish>div.fish-type {
+.food-item-wrap.customer-salads>div.customer-salads-type {
     display: block;
 }
 
-.food-item-wrap.beef>div.beef-type {
+.food-item-wrap.dessert>div.dessert-type {
+    display: block;
+}
+
+.food-item-wrap.combo>div.combo-type {
     display: block;
 }
 
@@ -596,7 +601,7 @@ section {
 
 /* Extra small devices (phones, 600px and down) */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     * {
         font-size: 13px;
     }
